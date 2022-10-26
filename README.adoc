@@ -1,0 +1,9 @@
+## Reproducer for https://github.com/vert-x3/vertx-grpc/issues/130
+
+## How to reproduce
+
+1. Package `./mvnw clean package`
+
+
+2. Run `java -jar target/vertx-grpc-timeout-1.0-SNAPSHOT-fat.jar | grep -E "GRPC deployment failed|concurrent.TimeoutException"`
+
